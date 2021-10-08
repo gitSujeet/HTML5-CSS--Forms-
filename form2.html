@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+
+<style>
+
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 600px;
+}
+form{
+    margin-left: 400px;
+    font-size: medium;
+}
+ input[type=text] {
+  width: 70%;
+  padding: 8px 8px;
+  margin: 0px 0px 10px;
+  border-style: hidden;
+  background-color: #f1f1f1; 
+}
+input[type=email] {
+  width: 70%;
+  padding: 8px 8px;
+  margin: 0px 0px 10px;
+  border-style: hidden;
+  background-color: #f1f1f1;
+}
+input[type=date] {
+  width: 70%;
+  padding: 8px 8px;
+  margin: 0px 0px 15px;
+  border-style: hidden;
+  background-color: #f1f1f1;
+}
+select{
+  width: 70%;
+  padding: 8px 8px;
+  margin-left: px;
+  margin: 0px 0px 15px; 
+  border-style: hidden;
+  background-color: #f1f1f1;
+}
+input[type=number] {
+  width: 20%;
+  padding: 8px 8px;
+  margin: 0px 0px 15px;  
+  border-style: hidden;
+  background-color: #f1f1f1;
+}
+input[type=button] {
+  background-color: #5848de;
+  color: white;
+  border-radius: 5px; width: 10%;
+  padding: 8px 8px;
+  margin: 20px 485px ;
+  float: right;
+  border-color: white;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <br>
+    <h1 style="text-align: center;">Reservation Form</h1> 
+    <br>
+    <form>   
+        <div class="grid-container">
+           <div><label for="flname">Name *</label></div>
+            <div><input type="text" id="flname" name="flname" placeholder="Name"></div>
+            <div><label for="mail">Email *</label></div>
+            <div><input type="email" id="mail" name="mail" placeholder="Email"></div>
+            <div><label for="room">Room Type</label></div>
+             <div> <select name="room" id="room" style="width:435px;">
+              <option value="select" >Select</option>
+              <option value="single">Single Room(Non AC)</option>
+              <option value="asingle">Single Room(AC)</option>
+              <option value="double">Double Room(Non AC)</option>
+              <option value="adouble">Double Room(AC)</option>
+              </select></div>
+            <div><label for="arrival">Arrival Date *</label></div>
+            <div><input type="date" id="arrival" name="arrival"></div>
+            <div><label for="departure">Departure Date *</label></div>
+            <div><input type="date" id="departure" name="departure"></div>
+            <div><label for="guest">Number of Guest *</label></div>
+            <div><input type="number" id="guest" name="guest"></div>
+            <div><label for="pickup"> Free Pickup</label></div>
+            <div style="margin-bottom: 30px;"><input type="radio" id="ypick" name="pick" value="Yes" >
+                <label for="ypick">Yes</label>
+                <input type="radio" id="npick" name="pick" value="No">
+                <label for="npick">No</label>
+            </div>
+            <div><label for="flight">Flight Number</label></div>
+            <div><input type="text" id="flight" name="flight" placeholder="Flight Number" style="margin-bottom: 15px;"></div>
+            <div><label for="request">Speacial Requests</label></div>
+            <div><textarea id="request" name="request" placeholder=" Type Here" style=" width: 430px; height: 102px; background-color: #f1f1f1; border: hidden;"></textarea></div>
+            </div>
+            <div>
+               <input type="button" value="Submit">
+            </div>
+    </form>
+        
+</html>

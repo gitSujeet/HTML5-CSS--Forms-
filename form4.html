@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+    <style>
+        body{
+            margin: 5px 300px 5px 500px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        .name{
+        display:flex; 
+        margin-top: 1.5%;
+    }
+    .fname{
+        margin-right: 60px;
+    }
+    .grid-container {
+  display: grid;
+  grid-template-columns: 190px 160px 270px;
+  grid-gap: 0px;
+    }
+    </style>
+</head>
+<body>
+    <h2>Internship Application Form</h2>
+    <form>
+    <div class="name">
+        <div class="fname">
+        <label for="finame">Name</label><br>
+        <input type="text" id="finame" name="finame" placeholder="First" size="40px" style="padding: 5px;"><br></div><div><label for="lname" > </label><br>
+        <input type="text" id="lname" name="lname" placeholder="Last" size="40px" style="margin-left: -18%;padding: 5px;"><br></div>
+        </div>
+
+        <div class="name">
+        <div class=fname>       
+        <label for="mail">Email</label><br>
+        <input type="email" id="mail" name="mail" size="40px" style="padding: 5px;"></div><br>
+        <div><label for="dob" style="margin-left: -36%;">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob" style="margin-left: -38%; width: 206%;padding: 2px;"  ></div><br>
+        </div>
+      <div>
+          <label for= "address">Address</label><br>
+          <input type="text" id="address" name="address" placeholder="Street Address" size="87px" style="margin-bottom: 17px;padding: 5px;"><br>
+          <input type="text" id="address2" name="address" placeholder="Street Address Line 2 " size="87px" style="margin-bottom: 17px ;padding: 5px;"><br>
+          <input type="text" id="city" name="city" placeholder="City" size="40px" style="padding: 5px;">
+          <input type="text" id="region" name="region" placeholder="Region" size="40px" style="padding: 5px;"><br>
+      </div>
+      <div class="name">
+        <div class="fname">
+        <input type="text" id="pin" name="pin" placeholder="Postal/Zip Code" size="40px" style="padding: 5px;"><br></div><div>
+            <select name="region" id="region" style="width: 309px; margin-left: -18%; margin-bottom: 17px;padding: 5px;">
+                <option value="romania">Romania</option>
+                <option value="india">India</option>
+                <option value="france">France</option>
+                <option value="us">US</option>
+                <option value="japan">Japan</option>
+                <option value="australia">Australia</option>
+                <option value="other">Other</option>
+            </select>
+                <br></div>
+        </div>
+        <div>
+            <label for="school">School Name</label><br>
+            <input type="text" id="school" name="school" size="87px" style="margin-bottom: 17px;padding: 5px;"><br>
+            <label for="phone">Phone</label><br>
+            <input type="text" name="phone" id="phone"  placeholder="### ### ####" size="87px" style="margin-bottom: 17px;padding: 5px;" ><br>
+            <label for="cv">Attach your CV</label><br>
+            <input type="file" name="cv" id="cv" placeholder="Choose File or Drag Here"  style="margin-bottom: 17px;" ><br>
+            <label for="pstat">Personal Statement</label><br>
+            <textarea id="msg" name="msg" style="height: 87px; width: 606px; margin-bottom: 17px;padding: 5px;"></textarea><br>
+            <label for="available">List your day(s)/hours available to work</label><br>
+            <input type="text" name="available" id="available" size="86px" style="margin-bottom: 17px;padding: 5px;">
+            </div>
+       <div>
+           <label for="ainterest">Area of Interest(You may select more than one)</label></div>
+           <div class="grid-container">  
+           <div>            
+           <input type="checkbox" id="admin" name="aint" value="Administration">
+           <label for="admin">Administration</label></div>
+           <div>
+           <input type="checkbox" id="english" name="aint" value="English">
+           <label for="english">English</label></div>
+           <div>
+           <input type="checkbox" id="event" name="aint" value="Events Planning">
+           <label for="event">Events Planning</label></div>
+           <div>
+           <input type="checkbox" id="edit" name="aint" value="Editing/Publications">
+           <label for="edit">Editing/Publications</label></div>
+           <div>
+           <input type="checkbox" id="marketing" name="aint" value="Marketing">
+           <label for="marketing">Marketing</label></div>
+           <div>
+           <input type="checkbox" id="prod" name="aint" value="Production - Lighting">
+           <label for="prod">Production - Lighting</label></div>
+           <div>
+           <input type="checkbox" id="tran" name="aint" value="Transalation">
+           <label for="admin">Translation</label></div>
+           <div>
+           <input type="checkbox" id="market" name="aint" value="Market Research">
+           <label for="market">Market Research</label></div>
+           <div>
+           <input type="checkbox" id="produ" name="aint" value="Production Stage Management">
+           <label for="produ">Production Stage Management</label></div>
+           <div>
+           <input type="checkbox" id="teach" name="aint" value="Teaching">
+           <label for="teach">Teaching</label></div>
+           <div>
+           <input type="checkbox" id="social" name="aint" value="Social Media">
+           <label for="social">Social Media</label></div>
+           <div>
+           <input type="checkbox" id="prodc" name="aint" value="Production - Costumes">
+           <label for="prodc">Production - Costumes</label></div>
+           <div>
+           <input type="checkbox" id="arts" name="aint" value="Visual Arts">
+           <label for="arts">Visual Arts</label></div>
+           <div>
+           <input type="checkbox" id="graph" name="aint" value="Graphic Design">
+           <label for="graph">Graphic Design</label></div>
+           <div>
+           <input type="checkbox" id="prodm" name="aint" value="Production Makeup">
+           <label for="prodm">Production Makeup</label></div>
+           <div>
+           <input type="checkbox" id="p-arts" name="aint" value="Performing Arts">
+           <label for="p-arts">Performing Arts</label></div>
+           <div>
+           <input type="checkbox" id="photo" name="aint" value="Photography">
+           <label for="photo">Photography</label></div>
+           <div>
+           <input type="checkbox" id="prods" name="aint" value="Production-Set design">
+           <label for="prods">Production-Set design</label></div>
+           <div>
+           <input type="checkbox" id="c-arts" name="aint" value="Communication Arts">
+           <label for="c-arts">Communication Arts</label></div>
+           <div>
+           <input type="checkbox" id="video" name="aint" value="Videography">
+           <label for="video">Videography</label></div>
+           <div>
+           <input type="checkbox" id="prodsound" name="aint" value="Production-Sound">
+           <label for="prodsound">Production-Sound</label></div>
+           </div>
+           <center> <input type="button" value="APPLY" style=" margin-top: 17px;border-radius: 3px; margin-right:13%; padding: 12px 30px 12px 30px;background-color: rgb(77, 76, 76);color: white;"></center>
+         </div>
+    </form>  
+</body>
+</html>

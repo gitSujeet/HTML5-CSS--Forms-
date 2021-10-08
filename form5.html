@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h1{
+           text-align: center;
+        }
+        .grid-container {
+  display: grid;
+  grid-template-columns: 190px 500px ;
+  grid-gap: 5px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+<div class="grid-container">
+        <div><label for="fname">First Name</label></div>
+        <div><input type="text" id="fname" name="fname" placeholder="First Name"></div>
+        <div><label for="lname">Last Name</label></div>
+        <div><input type="text" id="lname" name="lname" placeholder="Last Name"></div>
+        <div><label for="office">Department/Office</label></div>
+        <div><select name="office" id="office">
+            <option value="dept">Select your Department/Office</option>
+            <option value="mech">Mechanical</option>
+            <option value="ele">Electrical</option>
+            <option value="elec">Electronics</option>
+            <option value="cse">Computer Science</option>
+            <option value="civil">Civil</option>
+        </select>
+        </div>
+        <div><label for="user">Username</label></div>
+        <div><input type="text" id="user" name="user" placeholder="Username"></div>
+        <div><label for="pass">Password</label></div>
+        <div><input type="password" id="pass" name="pass" placeholder="Password"></div>
+        <div><label for="cpass">Confirm Password</label></div>
+        <div><input type="password" id="cpass" name="cpass" placeholder="Confirm Password"></div>
+        <div><label for="mail">E-mail</label></div>
+        <div><input type="email" id="mail" name="mail" placeholder="E-mail Address"></div>
+        <div><label for="contact">Contact No.</label></div>
+        <div><input type="text" id="contact" name="contact" placeholder="(639)" ></div>
+        </div>
+    </div>
+        <input type="button" value="Submit">
+    </form>
+
+</div>
+</body>

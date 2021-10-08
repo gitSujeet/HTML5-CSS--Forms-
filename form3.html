@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: fit-content;
+            margin: 50px 300px 50px 350px;
+        }
+        form{
+            
+            align-self: start;
+            background: white;
+            box-sizing: border-box;
+            margin-top: 2%;
+        }
+    .name{
+        display:flex; 
+        margin-top: 2%;
+    }
+    .fname{
+        margin-right: 50px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <p>Use this contact us form template on your website to recieve emails from your visitors in no time.Let us know your questions,suggestions and concerns by filling out the contact form below.</p><hr style="width: 810px; margin-right: 30%;">
+    <form>
+        <div class="name">
+        <div class="fname"><label for="finame">Name*</label><br>
+        <input type="text" id="finame" name="finame" placeholder="First" size="50" style="padding: 5px;"></div><br>
+        <div><label for="lname"> </label><br><input type="text" id="lname" name="lname" placeholder="Last" size="50" style="padding: 5px"></div><br>
+        </div>   
+        <div class="name">
+        <div class="fname">
+        <label for="mail">Email*</label><br>
+        <input type="email" id="mail" name="mail" size="50" style="padding: 5px"></div><br>
+        <div><label for="phone">Phone*</label><br>
+        <input type="text" id="phone" name="phone" placeholder="### ### ####" size="50" style="padding: 5px"></div><br>
+        </div>
+        <div>
+        <label for="message">Message subject*</label><br>
+        <select name="message" id="message" style=" margin-top:0.3%; margin-bottom: 1%; width: 377px;padding: 5px">
+            <option value="request">Request</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br>
+        <label for="msg">Message*</label><br>
+            <textarea id="msg" name="msg" style="margin-top: 0.5%; height: 139px; width: 790px;padding: 5px"></textarea><br>
+            <div>
+            <input type="button" value="Send Message " style="background-color:rgb(65, 65, 65);color:white ;border-radius:2px;outline: white; margin-top:3%; margin-left: 38%; padding: 10px 23px 10px; 23px" >
+        </div>
+    </form>
+
+    
+    
+</body>
+</html>
